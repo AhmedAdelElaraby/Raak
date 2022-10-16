@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        app:cardElevation="@dimen/_5sdp"
+        app:cardCornerRadius="@dimen/_10sdp"
+        android:shadowColor="#F5F5FF"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:layout_marginStart="@dimen/_5sdp"
+        android:layout_marginEnd="@dimen/_5sdp"
+        android:background="@drawable/style_button"
+        android:layout_height="wrap_content">
+<TextView
+    android:layout_width="@dimen/_92sdp"
+    android:layout_height="wrap_content"
+
+    app:layout_constraintLeft_toLeftOf="parent"
+    android:layout_marginTop="@dimen/_2sdp"
+    android:layout_marginStart="@dimen/_2sdp"
+    app:layout_constraintTop_toTopOf="parent"
+    android:background="@drawable/itemtextorder"
+    android:textSize="@dimen/_15sdp"
+    android:gravity="center"
+    android:fontFamily="@font/droidkufi_bold"
+    android:text=""
+    android:padding="@dimen/_10sdp"
+    android:id="@+id/caseitem"/>
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:layout_marginStart="@dimen/_2sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/caseitem"
+            android:background="@drawable/itemtextorderunder"
+            android:textSize="@dimen/_10sdp"
+            android:fontFamily="@font/droidkufi_bold"
+            android:text="Make complaint"
+            android:gravity="center"
+            android:padding="@dimen/_11sdp"
+            android:id="@+id/caseitemtwo"/>
+        <LinearLayout
+
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            android:layout_marginRight="@dimen/_5sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginLeft="@dimen/_3sdp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toRightOf="@id/caseitem">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_marginStart="@dimen/_5sdp"
+
+                android:textSize="@dimen/_15sdp"
+                android:fontFamily="@font/droidkufi_bold"
+                android:text="ahmed"
+                android:id="@+id/texttime"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+                android:textSize="@dimen/_15sdp"
+                android:fontFamily="@font/droidkufi_bold"
+                android:text="ahmed"
+                android:id="@+id/texttwo"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="start"
+                android:layout_marginStart="@dimen/_5sdp"
+                android:layout_marginTop="@dimen/_5sdp"
+
+                android:textSize="@dimen/_15sdp"
+                android:fontFamily="@font/droidkufi_bold"
+                android:text="ahmed"
+                android:id="@+id/textthree"/>
+        </LinearLayout>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

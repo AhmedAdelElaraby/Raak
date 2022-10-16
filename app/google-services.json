@@ -1,0 +1,54 @@
+{
+  "project_info": {
+    "project_number": "552063938284",
+    "project_id": "raak-32ca3",
+    "storage_bucket": "raak-32ca3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:552063938284:android:3345f723a0abbd52153fc9",
+        "android_client_info": {
+          "package_name": "com.teraninja.raak"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "552063938284-gld6aleg51mv0tf3s6kkiq10uatjelv5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.teraninja.raak",
+            "certificate_hash": "4e70a53129caa9e5d493a4ccce3d6dc8d5c67622"
+          }
+        },
+        {
+          "client_id": "552063938284-mj30lemu5n6r66g48hvmi93cfh8ns34b.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBOV96Tjw2xbKjfAgLepmSc3aW2Y3LnNPg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "552063938284-mj30lemu5n6r66g48hvmi93cfh8ns34b.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "552063938284-58tdupfqriq7obf744he8tldomdoacie.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "com.Teraninja.Raaak"
+              }
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

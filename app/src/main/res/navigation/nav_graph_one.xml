@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph_one"
+    app:startDestination="@id/splashScreenOne">
+
+    <fragment
+        android:id="@+id/splashScreenOne"
+        android:name="com.teraninja.raak.SplashScreenOne"
+        android:label="fragment_splash_screen_one"
+        tools:layout="@layout/fragment_splash_screen_one" >
+        <action
+            android:id="@+id/action_splashScreenOne_to_login"
+            app:destination="@id/login" />
+        <action
+            android:id="@+id/action_splashScreenOne_to_home2"
+            app:destination="@id/home2" />
+    </fragment>
+    <fragment
+        android:id="@+id/login"
+        android:name="com.teraninja.raak.Login"
+        android:label="fragment_login"
+        tools:layout="@layout/fragment_login" >
+        <action
+            android:id="@+id/action_login_to_forgetPasswordOne"
+            app:destination="@id/forgetPasswordOne" />
+        <action
+            android:id="@+id/action_login_to_home2"
+            app:destination="@id/home2" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgetPasswordOne"
+        android:name="com.teraninja.raak.ForgetPasswordOne"
+        android:label="fragment_forget_password_one"
+        tools:layout="@layout/fragment_forget_password_one" >
+        <action
+            android:id="@+id/action_forgetPasswordOne_to_forgetPasswordByCode"
+            app:destination="@id/forgetPasswordByCode" />
+    </fragment>
+    <fragment
+        android:id="@+id/forgetPasswordByCode"
+        android:name="com.teraninja.raak.ForgetPasswordByCode"
+        android:label="fragment_forget_password_by_code"
+        tools:layout="@layout/fragment_forget_password_by_code" >
+        <action
+            android:id="@+id/action_forgetPasswordByCode_to_confarmPassword"
+            app:destination="@id/confarmPassword" />
+        <argument
+            android:name="phone"
+            app:argType="string"
+            android:defaultValue="default" />
+        <argument
+            android:name="code"
+            app:argType="string"
+            android:defaultValue="default" />
+    </fragment>
+    <fragment
+        android:id="@+id/confarmPassword"
+        android:name="com.teraninja.raak.ConfarmPassword"
+        android:label="fragment_confarm_password"
+        tools:layout="@layout/fragment_confarm_password" >
+        <argument
+            android:name="Phone"
+            app:argType="string"
+            android:defaultValue="default" />
+        <argument
+            android:name="code"
+            app:argType="string"
+            android:defaultValue="default" />
+        <action
+            android:id="@+id/action_confarmPassword_to_login"
+            app:destination="@id/login" />
+    </fragment>
+    <fragment
+        android:id="@+id/home2"
+        android:name="com.teraninja.raak.Home"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_home2_to_showDetilseHome"
+            app:destination="@id/showDetilseHome" />
+        <action
+            android:id="@+id/action_home2_to_notifications"
+            app:destination="@id/notifications" />
+        <action
+            android:id="@+id/action_home2_to_setaing"
+            app:destination="@id/setaing" />
+        <action
+            android:id="@+id/action_home2_to_showOllDetilseRepire"
+            app:destination="@id/showOllDetilseRepire" />
+        <action
+            android:id="@+id/action_home2_to_blankFragment"
+            app:destination="@id/blankFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/showDetilseHome"
+        android:name="com.teraninja.raak.ShowDetilseHome"
+        android:label="fragment_show_detilse_home"
+        tools:layout="@layout/fragment_show_detilse_home" >
+        <argument
+            android:name="Id"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+    <fragment
+        android:id="@+id/notifications"
+        android:name="com.teraninja.raak.Notifications"
+        android:label="fragment_notifications"
+        tools:layout="@layout/fragment_notifications" />
+    <fragment
+        android:id="@+id/setaing"
+        android:name="com.teraninja.raak.Setaing"
+        android:label="fragment_setaing"
+        tools:layout="@layout/fragment_setaing" >
+        <action
+            android:id="@+id/action_setaing_to_splashScreenOne"
+            app:destination="@id/splashScreenOne" />
+    </fragment>
+    <fragment
+        android:id="@+id/showOllDetilseRepire"
+        android:name="com.teraninja.raak.ShowOllDetilseRepire"
+        android:label="fragment_show_oll_detilse_repire"
+        tools:layout="@layout/fragment_show_oll_detilse_repire" >
+        <argument
+            android:name="unit"
+            app:argType="string"
+            android:defaultValue="default" />
+        <argument
+            android:name="location"
+            app:argType="string"
+            android:defaultValue="default" />
+        <argument
+            android:name="start"
+            app:argType="string"
+            android:defaultValue="default" />
+        <argument
+            android:name="end"
+            app:argType="string"
+            android:defaultValue="default" />
+        <argument
+            android:name="id"
+            app:argType="string"
+            android:defaultValue="default" />
+        <action
+            android:id="@+id/action_showOllDetilseRepire_to_createRepire"
+            app:destination="@id/createRepire" />
+        <argument
+            android:name="userid"
+            app:argType="string"
+            android:defaultValue="default" />
+    </fragment>
+    <fragment
+        android:id="@+id/createRepire"
+        android:name="com.teraninja.raak.CreateRepire"
+        android:label="fragment_create_repire"
+        tools:layout="@layout/fragment_create_repire" >
+        <argument
+            android:name="nuitnumber"
+            app:argType="string"
+            android:defaultValue="default" />
+        <argument
+            android:name="location"
+            app:argType="string"
+            android:defaultValue="default" />
+        <argument
+            android:name="id"
+            app:argType="string"
+            android:defaultValue="default" />
+        <argument
+            android:name="userid"
+            app:argType="string"
+            android:defaultValue="default" />
+    </fragment>
+    <fragment
+        android:id="@+id/blankFragment"
+        android:name="com.teraninja.raak.BlankFragment"
+        android:label="fragment_blank"
+        tools:layout="@layout/fragment_blank" >
+        <argument
+            android:name="time"
+            app:argType="string"
+            android:defaultValue="default" />
+        <argument
+            android:name="number"
+            app:argType="string"
+            android:defaultValue="default" />
+        <argument
+            android:name="cases"
+            app:argType="string"
+            android:defaultValue="default" />
+        <argument
+            android:name="id"
+            app:argType="integer"
+            android:defaultValue="0" />
+    </fragment>
+</navigation>
